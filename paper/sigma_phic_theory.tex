@@ -1,0 +1,75 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\title{Σ-Φ-C Cognitive Collapse Model}
+\author{Your Name}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We propose the Σ-Φ-C model, a cognitive dynamical system describing cognition as transitions between Generation (T), Correction (O), and Collapse (∅) states.
+\end{abstract}
+
+\section{Introduction}
+
+Cognition is traditionally modeled as parallel processing. We argue it is better described as a state-transition system.
+
+\section{Model Definition}
+
+We define a cognitive system:
+
+\[
+C = \langle S, \Delta, I \rangle
+\]
+
+where:
+
+\[
+S \in \{T, O, \emptyset\}
+\]
+
+\section{State Dynamics}
+
+The system evolves as:
+
+\[
+S_{t+1} \sim P(S | S_t, I_t)
+\]
+
+\section{Collapse Mechanism}
+
+Collapse occurs when:
+
+\[
+p_c = \sigma(I(S_t) - \theta)
+\]
+
+where:
+
+\[
+\sigma(x) = \frac{1}{1 + e^{-x}}
+\]
+
+\section{Reconfiguration Phase}
+
+When collapse occurs:
+
+\[
+S_t \rightarrow \emptyset
+\]
+
+and:
+
+\[
+P(S_{t+1} | \emptyset) = \text{Uniform}(T, O)
+\]
+
+\section{Conclusion}
+
+The Σ-Φ-C model provides a unified dynamical framework for cognition.
+
+\end{document}
